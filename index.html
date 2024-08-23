@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -19,8 +19,14 @@
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
 
 
+    <!-- daisy ui cdn -->
+
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+
 </head>
-<body>
+<body class="man">
 
     <!-- css starts from here -->
 
@@ -30,12 +36,16 @@
             font-family: "Manrope", sans-serif;
         }
 
+        .sec3{
+            background-image: url(./assets/bg.jpg);
+        }
+
     </style>
 
     <!-- header starts from here -->
 
 
-    <header class="man">
+    <header>
 
         <nav>
 
@@ -87,8 +97,8 @@
                 </div>
                 
 
-                <div class="flex items-center text-white">
-                    <button class="p-3 bg-[#ABEF5F] rounded-3xl flex              items-center gap-3">Book Consult
+                <div class="flex items-center">
+                    <button class="btn p-3 bg-[#ABEF5F] rounded-3xl flex              items-center gap-3 font-extrabold text-xl">Book Consult
                          <div class="bg-[#1C1C1C] rounded-full w-6 h-6">
                             <i class="fa-solid fa-arrow-right h-5 w-5 -rotate-45 rounded-full text-white "></i>
                          </div>
@@ -124,8 +134,8 @@
             <!-- btn div starts from here -->
 
             <div class="flex justify-center mt-8">
-                    <button class="bg-[#ABEF5F] p-3 rounded-3xl font-bold text-xl">View Details 
-                        <i class="fa-solid fa-arrow-right -rotate-45"></i>
+                    <button class="btn bg-[#aef5be] p-3 rounded-3xl font-bold text-xl">View Details 
+                        <i class="fa-solid fa-arrow-right -rotate-45 bg-[#ABEF5F] rounded-full p-1"></i>
                     </button>
             </div>
 
@@ -143,13 +153,230 @@
 
     <main>
 
-        
+        <!-- section 1 starts from here -->
+
+        <section class="bg-[#edeff0] p-1 mt-20 pb-28">
+
+             <!-- section 1 string img starts from here -->
+
+             <div class="absolute mt-24 ml-60">
+                <img src="./assets/Vector.png" alt="">
+            </div>
+
+
+
+            <div class="flex mt-40 max-w-screen-xl mx-auto gap-16">
+
+
+                <!-- sction 1 text div starts from here -->
+
+
+                <div>
+                    <button class="bg-white p-1 rounded-3xl font-bold text-[#494949]"><i class="fa-solid fa-arrow-right"></i> About Us</button>
+
+                    <h1 class="font-bold text-[#212121] text-4xl mt-8">We design thoughtful, <br> liveable spaces</h1>
+
+                    <p class="mt-8">The barn house captivates with its blend of rustic charm and<br> 
+                        modern sophistication, featuring weathered wood, sleek metal accents.
+                    </p>
+                        <!-- section 1 card 1 -->
+                    <div class="bg-white mt-8 flex gap-4 p-7 rounded-2xl">
+
+                        <div>
+                            <img src="./assets/commercial.png" alt="">
+                        </div>
+
+
+                        <div>
+                            <h1 class="font-extrabold text-xl text-[#494949]"> Commercial  </h1>
+
+                        <p class="text-[#737373]">The barn house captivates with its   blend <br> of rustic charm and modern.</p>
+                        </div>
+
+                    </div>
+
+                        <!-- section 1 card 2 -->
+
+
+                    <div class="bg-white mt-10 flex gap-4 p-7 rounded-2xl">
+
+                        <div>
+                            <img src="./assets/residential.png" alt="">
+                        </div>
+
+
+                        <div>
+                            <h1 class="font-extrabold text-xl text-[#494949]">Residential </h1>
+
+                        <p class="text-[#737373]">The barn house captivates with its blend <br> of rustic charm and modern.</p>
+                        </div>
+                    </div>
+                    
+                </div>
+
+
+
+                <!-- section 1 img div starts from here -->
+
+                <div class="">
+
+                    <img src="./assets/Rectangle.png" alt="" class="">
+
+                </div>
+
+            </div>
+
+
+            <!-- actual section 2 starts from here -->
+
+
+            <div class="mt-40">
+
+                <div class="text-center">
+
+                    <button class="bg-white p-1 rounded-3xl font-bold text-[#494949]"><i class="fa-solid fa-arrow-right"></i> How we works</button>
+
+                    <h1 class="font-bold text-[40px] text-[#212121] mt-4">Our Works Process</h1>
+
+                    <p class="text-[#494949] mt-4 font-medium">The barn house captivates with its blend of rustic charm and modern sophistication, <br> featuring weathered wood, sleek metal accents.</p>
+
+                </div>
+
+            </div>
+
+
+            <!-- section 2 card parent div -->
+
+
+            <div class="flex max-w-screen-xl mx-auto gap-6 mt-10">
+
+                <!-- sec 2 card 1 -->
+
+                <div class="bg-[#E7C1D3] rounded-2xl p-8">
+
+                    <!-- card 1 img div -->
+
+                    <div>
+                        <img src="./assets/concept.png" alt="">
+                    </div>
+
+                    <h1 class=" text-[#1C1C1C] font-bold text-xl">Concept</h1>
+
+                    <p class="text-[#494949] font-medium">The barn house captivates <br> with its blend of rustic charm <br>and modern.</p>
+
+                </div>
+
+                <!-- sec 2 card 2 -->
+
+                <div class="bg-[#EFDA6E] rounded-2xl p-8">
+
+                    <!-- card 2 img div -->
+
+                    <div>
+                        <img src="./assets/flow-chart.png" alt="">
+                    </div>
+
+                    <h1 class="text-[#1C1C1C] font-bold text-xl">Design Process</h1>
+
+                    <p class="text-[#494949] font-medium">The barn house captivates <br> with its blend of rustic charm <br>and modern.</p>
+
+                </div>
+                <!-- sec 2 card 3 -->
+
+                <div class="bg-[#A4DAC3] rounded-2xl p-8">
+
+                    <!-- card 3 img div -->
+
+                    <div>
+                        <img src="./assets/vision.png" alt="">
+                    </div>
+
+                    <h1 class="text-[#1C1C1C] font-bold text-xl">Design Process</h1>
+
+                    <p class="text-[#494949] font-medium">The barn house captivates <br> with its blend of rustic charm <br>and modern.</p>
+
+                </div>
+
+                <!-- sec 2 card 4 -->
+
+                <div class="bg-[#77AAEA] rounded-2xl p-8">
+
+                    <!-- card 4 img div -->
+
+                    <div>
+                        <img src="./assets/budget-planning.png" alt="">
+                    </div>
+
+                    <h1 class="text-[#1C1C1C] font-bold text-xl">Design Process</h1>
+
+                    <p class="text-[#494949] font-medium">The barn house captivates <br> with its blend of rustic charm <br>and modern.</p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- section 3 starts from -->
+
+
+        <section class="sec3 mt-2 bg-no-repeat bg-cover pb-16">
+
+        <!-- text div starts from here -->
+
+        <div class="max-w-screen-xl mx-auto text-center ">
+
+            <button class="btn bg-[#dbfcc7] rounded-3xl py-1 px-2 text-[#494949] font-bold mt-24">
+                <i class="fa-solid fa-arrow-right"></i>
+                Let's Connect</button>
+
+            <h1 class="font-bold text-5xl text-[#212121] mt-5">Let's Discuss Next Project</h1>
+
+            <p class="font-medium text-[#494949] mt-8">The barn house captivates with its blend of rustic charm and modern sophistication, <br> featuring weathered wood, sleek metal accents.</p>
+
+        </div>
+
+        <!-- grid div starts from here -->
+
+
+        <div class="max-w-screen-lg mx-auto grid grid-cols-2 gap-y-8 mt-10">
+
+            <input type="text" class="bg-white text-[#969595] rounded-3xl p-4 max-w-md" placeholder="First Name*">
+
+            <input type="text" class="bg-white text-[#969595]  rounded-3xl p-4 max-w-md" placeholder="Last Name*">
+
+            <input type="number" class="bg-white text-[#969595]  rounded-3xl p-4 max-w-md" placeholder="Phone Number*">
+
+            <input type="text" class="bg-white  text-[#969595]  rounded-3xl p-4 max-w-md" placeholder="Email Number*">
+
+            <input type="text" class="bg-white col-span-2 rounded-3xl max-w-[955px]
+            pb-44 px-3 pt-3 text-[#969595]" placeholder="Write your message">
+
+        </div>
+
+        <div class="max-w-screen-lg mx-auto mt-7">
+            <button class="btn w-[960px] bg-[#ABEF5F] rounded-3xl">Send Mail
+                <i class="fa-solid fa-arrow-right -rotate-45 bg-[#1C1C1C] text-white p-1 rounded-full"></i>
+            </button>
+        </div>
+
+        </section>
 
     </main>
 
-    <footer>
+    <footer class="bg-[#1C1C1C]">
+
+        <div>
+
+            <h1></h1>
+
+        </div>
 
     </footer>
     
+
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 </body>
 </html>
